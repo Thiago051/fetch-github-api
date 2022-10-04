@@ -152,6 +152,24 @@ main {
   display: none;
 }
 
+/* FOOTER */
+
+.footer {
+  margin-top: 50px;
+}
+
+.footer p {
+  color: #fff;
+}
+
+.footer a {
+  text-decoration: underline;
+  color: hotpink;
+  font-weight: bold;
+}
+
+/*RESPONSIVE*/
+
 @media (max-width: 1280px) {
   .container {
     flex-direction: column;
