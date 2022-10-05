@@ -138,9 +138,12 @@ main {
   background-color: #24292e;
   border-radius: 5px;
   padding: 10px 5px;
-} 
+}
 
 /* REPOSITORIES */
+.container .profile-data .repositories {
+  margin-bottom: 30px;
+}
 
 .container .profile-data .repositories h2 {
   margin-bottom: 30px;
@@ -169,6 +172,22 @@ main {
 
 .container .profile-data.hide {
   display: none;
+}
+
+/*EVENTS*/
+
+.container .profile-data .events h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container .profile-data .events ul li {
+  margin-bottom: 10px;
+}
+
+.container .profile-data .events ul li p {
+  display: inline;
+  font-weight: bold;
 }
 
 /* FOOTER */
