@@ -170,6 +170,28 @@ main {
   color: #fff
 }
 
+.container .profile-data .repositories ul li a .repositories-info {
+  margin-top: 15px;
+}
+
+.container .profile-data .repositories ul li a .repositories-info li {
+  background-color: #24292e;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.repositories-info li:nth-child(2) {
+  margin-left: 5px;
+}
+
+.repositories-info li:nth-child(3) {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
 .container .profile-data.hide {
   display: none;
 }

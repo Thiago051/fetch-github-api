@@ -20,7 +20,19 @@ const screen = {
     renderRepositories(user){
         let repositoriesItens = ""
         user.repositories.forEach(repo => {
-            repositoriesItens += `<li><a href="${repo.html_url}" target="_blank">${repo.name}</a></li>`
+            repositoriesItens += 
+                `<li>
+                    <a href="${repo.html_url}" target="_blank">
+                        ${repo.name}
+                        <ul class="repositories-info">
+                            <li>🍴 ${repo.forks_count}</li>
+                            <li>⭐ ${repo.stargazers_count}</li>
+                            <li>👀 ${repo.watchers_count}</li>
+                            <li>😛 ${repo.language ?? '❓'}</li>
+                        </ul>
+                        
+                    </a>
+                </li>`
         })
 
         if (user.repositories.length > 0) {
@@ -34,7 +46,6 @@ const screen = {
     renderEvents(user) {
         let userEventList = user.events.filter(event => event.type == "PushEvent")
 
-        userEventList.forEach(event => console.log(event.payload.commits[0].message))
         let userEvents = ""
         userEventList.forEach(event => {
             userEvents +=
