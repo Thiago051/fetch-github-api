@@ -129,16 +129,20 @@ main {
 
 .container .profile-data .info .data .follow {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .container .profile-data .info .data .follow span {
   color: #fff;
+  width: 100%;
+  align-items: center;
   background-color: #24292e;
   border-radius: 5px;
   padding: 10px 5px;
 }
+
 
 /* REPOSITORIES */
 .container .profile-data .repositories {
@@ -171,16 +175,16 @@ main {
 }
 
 .container .profile-data .repositories ul li a .repositories-info {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .container .profile-data .repositories ul li a .repositories-info li {
   background-color: #24292e;
   color: #fff;
-  display: flex;
   justify-content: space-evenly;
   border-radius: 5px;
   padding: 5px;
+  margin-top: 5px;
 }
 
 .repositories-info li:nth-child(2) {
