@@ -7,6 +7,13 @@ const screen = {
                     <div class="data">
                         <h1>${user.name ?? 'Não possui nome cadastrado 😢'}</h1>
                         <p>${user.bio ?? 'Não possui bio cadastrada 😢'}</p>
+                        <div class="follow">
+                            <span>
+                                👨‍👩‍👦
+                                Seguidores: ${user.followers} |
+                                Seguindo: ${user.following}
+                            </span>
+                        </div>
                     </div>
              </div>`
 
@@ -23,7 +30,7 @@ const screen = {
                  </div>`
         }
     },
-    renderNotFound(){
+    renderNotFound() {
         this.userProfile.innerHTML = "<h3>Usuário não encontrado</h3>"
     }
 }
